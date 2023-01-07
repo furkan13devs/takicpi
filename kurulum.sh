@@ -14,7 +14,7 @@ echo "2) SG OLUOM BEN"
 read -p ">> " resp
 if [ "$resp" == "$var1" ]
 then
-python3 kuzgun.py
+python3 takipci.py
 else
 echo "Para iniciar el script debe escribir: python takipci.py"
 echo ":D"
