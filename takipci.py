@@ -88,7 +88,7 @@ by: TÜRK SWANTEX
             print(Fore.GREEN+Style.BRIGHT+"1."+Style.RESET_ALL+Fore.YELLOW+" TAKİPCİ"+Fore.GREEN+Style.BRIGHT+"\n2."+Style.RESET_ALL+Fore.YELLOW+" BEĞENİ "+Fore.GREEN+Style.BRIGHT+"\n3."+Style.RESET_ALL+Fore.YELLOW+" ÇIKIŞ")
             opt=str(input(Fore.RED+Style.BRIGHT+"\n>>> "+Fore.RESET))
             if opt=='1':
-                domain=str(input(Fore.CYAN+Style.BRIGHT+"URL GİRİN (ÖRNEK:google.com):"+Fore.RESET))
+                domain=str(input(Fore.CYAN+Style.BRIGHT+"kullanıcı adı girin:"+Fore.RESET))
                 ip=socket.gethostbyname(domain)
                 break
             elif opt=='2':
@@ -102,7 +102,7 @@ by: TÜRK SWANTEX
                 print(Fore.RED+'Opcion invalida!'+Fore.RESET)
                 time.sleep(2)
 
-        port =int(input(Fore.CYAN+Style.BRIGHT+"Port numarası  : "+Fore.RESET))
+        port =int(input(Fore.CYAN+Style.BRIGHT+"takipci sayısı(max 25.000)  : "+Fore.RESET))
 
         print(Fore.YELLOW+Style.BRIGHT+"başlangıç...."+Style.RESET_ALL)
         clearConsole()
